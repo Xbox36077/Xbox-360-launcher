@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xbox 360 Alpha 5</title>
+  <meta name="viewport" content="width=1366, initial-scale=0.5, minimum-scale=0.3, maximum-scale=2.0, user-scalable=yes">
+  <link href="https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+  <script src="https://public.codepenassets.com/js/prefixfree-1.0.7.min.js"></script>
+</head>
+<body>
+
+  <div id="dashboardwrapper">
+    <div class="backdropTop"></div>
+    
+    <header>
+      <nav id="global-nav">
+        <ul class="global-nav-list">
+          <li class="global-nav-list-item"><a href="#bing" class="global-nav-list-item-link">bing</a></li>
+          <li class="global-nav-list-item"><a href="#home" class="global-nav-list-item-link -active">home</a></li>
+          <li class="global-nav-list-item"><a href="#social" class="global-nav-list-item-link">social</a></li>
+          <li class="global-nav-list-item"><a href="#games" class="global-nav-list-item-link">games</a></li>
+          <li class="global-nav-list-item"><a href="#tv-movies" class="global-nav-list-item-link">tv &amp; movies</a></li>
+          <li class="global-nav-list-item"><a href="#music" class="global-nav-list-item-link">music</a></li>
+          <li class="global-nav-list-item"><a href="#apps" class="global-nav-list-item-link">apps</a></li>
+          <li class="global-nav-list-item"><a href="#settings" class="global-nav-list-item-link">settings</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div id="panels-area">
+        <ul data-position="#home" class="global-panel-list">
+          
+          <li id="bing" class="global-panel-list-item">
+            <form id="bingForm" name="bingForm" action="#" method="get" class="bingForm">
+              <input type="text" id="bingSearchInput" name="bingSearchTerm" placeholder="search...">
+            </form>
+          </li>
+
+          <li id="tv-movies" class="global-panel-list-item">
+            <ul class="tile-list">
+              <li tabindex="1" class="tile-item"></li><li tabindex="2" class="tile-item"></li><li tabindex="3" class="tile-item"></li>
+              <li tabindex="4" class="tile-item"></li><li tabindex="5" class="tile-item"></li><li tabindex="6" class="tile-item"></li>
+              <li tabindex="7" class="tile-item"></li><li tabindex="8" class="tile-item"></li><li tabindex="9" class="tile-item"></li>
+              <li tabindex="10" class="tile-item"></li><li tabindex="11" class="tile-item"></li><li tabindex="12" class="tile-item"></li>
+            </ul>
+          </li>
+
+          <li id="home" class="global-panel-list-item -active">
+            <ul class="tile-list">
+              <li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li>
+              <li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li>
+              <li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li>
+            </ul>
+          </li>
+
+          <li id="social" class="global-panel-list-item">
+            <ul class="tile-list"><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li></ul>
+          </li>
+
+          <li id="games" class="global-panel-list-item">
+            <ul class="tile-list"><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li></ul>
+          </li>
+
+          <li id="music" class="global-panel-list-item">
+            <ul class="tile-list"><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li></ul>
+          </li>
+
+          <li id="apps" class="global-panel-list-item">
+            <ul class="tile-list"><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li></ul>
+          </li>
+
+          <li id="settings" class="global-panel-list-item">
+            <ul class="tile-list"><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li><li class="tile-item"></li></ul>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <div id="bootOverlay">
+    <video id="bootVideo" src="Xbox 360.mp4" playsinline preload="auto">Your browser does not support the video tag.</video>
+    <button id="startBootBtn">Click to Start Xbox 360</button>
+  </div>
+
+  <div id="profileAvatar">
+      <img id="avatarImage" src="https://via.placeholder.com/50" alt="Profile">
+      <input type="file" id="avatarUpload" accept="image/*" hidden>
+  </div>
+
+  <div id="clockBox">
+    <span id="time">00:00</span>
+  </div>
+
+  <div id="imageUploadModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 100001; justify-content: center; align-items: center;">
+    <div style="background: #2c2c2c; padding: 20px; border-radius: 10px; width: 400px; text-align: center;">
+      <h3 style="color: white; margin-bottom: 20px;">Upload Image/Video for Tile</h3>
+      <input type="file" id="imageUploadInput" accept="image/*,video/*" style="margin: 10px 0; color: white;">
+      <div style="margin-top: 20px;">
+        <button id="confirmUpload" style="background: #75bb3e; color: white; border: none; padding: 10px 20px; margin: 0 10px; border-radius: 5px; cursor: pointer;">Set Media</button>
+        <button id="cancelUpload" style="background: #666; color: white; border: none; padding: 10px 20px; margin: 0 10px; border-radius: 5px; cursor: pointer;">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="imageGalleryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 100002; padding: 20px; overflow-y: auto;">
+    <div style="background: #2c2c2c; padding: 20px; border-radius: 10px; max-width: 900px; margin: 0 auto;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <h3 style="color: white; margin: 0;">Select Image from Gallery</h3>
+        <button id="closeGallery" style="background: #666; color: white; border: none; padding: 5px 15px; border-radius: 5px; cursor: pointer;">Close</button>
+      </div>
+      <div id="galleryGrid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px;"></div>
+      <div style="text-align: center;">
+        <button id="uploadNewImage" style="background: #75bb3e; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;">Upload New Image</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.8.2.min.js"><\\/script>')</script>
+  
+  <script type="text/javascript">
+  (function() {
+    var loc = window.location.href;
+    $(document).ready(function() {
+      var URLindex = loc.indexOf("#");
+      if (URLindex > 0) { window.location = loc.substring(0, URLindex); }
+      $("body").removeClass("invisible");
+      
+      $(".global-nav-list-item-link").click(function(e) {
+        var thisID = $(this).attr("href");
+        $(".global-nav-list-item-link").removeClass("-active");
+        $(this).addClass("-active");
+        if (thisID === "tv & movies") { thisID = "tv-movies"; }
+        $(".global-panel-list-item").removeClass("-active").filter(thisID).toggleClass("-active");
+        $(".global-panel-list-item").parent().attr("data-position", thisID);
+        return e.preventDefault();
+      });
+
+      $(window).keypress(function(event) {
+        var currentPanel = $(".global-panel-list").attr("data-position");
+        if (event.which === 91) { // [ Key
+          $(".global-nav-list").find("li a[href=" + currentPanel + "]").parent().prev().find("a").trigger("click");
+        }
+        if (event.which === 93) { // ] Key
+          $(".global-nav-list").find("li a[href=" + currentPanel + "]").parent().next().find("a").trigger("click");
+        }
+      });
+    });
+  }).call(this);
+  </script>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xbox 360 Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="xbox-notification" id="xboxNotif">
+        
+        <label for="xboxImgUpload" class="xbox-logo-container">
+            <img src="Picsart_26-06-10_23-16-03-651.jpg" alt="Xbox Logo" class="xbox-logo-img" id="logoPreview">
+            <div class="upload-icon-overlay">➕</div>
+        </label>
+        
+        <input type="file" id="xboxImgUpload" accept="image/*" style="display: none;">
+        
+        <div class="xbox-text-container">
+            <span class="xbox-status">Signed in</span>
+            <span class="xbox-gamertag">free</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <audio id="xboxSound" src="achievement-mp3-sound.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+<audio id="xboxSound" src="achievement-mp3-sound.mp3" preload="auto"></audio>
+<audio id="soundLeft" src="08_Page_Left.mp3" preload="auto"></audio>
+<audio id="soundRight" src="09_Page_Right.mp3" preload="auto"></audio>
